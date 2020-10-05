@@ -1,4 +1,4 @@
-﻿function revisedSortTable(){
+function revisedSortTable(){
     var table, rows, switching, i, j, x, y, ai, aj, bi, bj, si, sj, xi, xj, shouldSwitch;
     table = document.getElementById("totable");
     switching = true;
@@ -43,3 +43,5 @@
         }
     }
 }
+
+function isOdd(num) { return !!(num % 2); }

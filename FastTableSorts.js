@@ -48,12 +48,12 @@ function revisedSortTable() {
             sj = rows[j].getElementsByTagName("TD")[13];
             xi = rows[i].getElementsByTagName("TD")[14];
             xj = rows[j].getElementsByTagName("TD")[14];
-            if (Number(si.innerHTML) == Number(sj.innerHTML)) {
+            if (Number(si.innerHTML) == Number(sj.innerHTML) && Number(xi.innerHTML) != Number(xj.innerHTML)) {
                 if (Number(xi.innerHTML) > Number(xj.innerHTML)) {
                     rows[i].parentNode.insertBefore(rows[j], rows[i]);
                 }
             }
-            if (Number(si.innerHTML) == Number(sj.innerHTML)) {
+            if (Number(si.innerHTML) == Number(sj.innerHTML) && Number(xi.innerHTML) != Number(xj.innerHTML)) {
                 if (Number(xi.innerHTML) < Number(xj.innerHTML)) {
                     rows[i].parentNode.insertBefore(rows[j], rows[i]);
 

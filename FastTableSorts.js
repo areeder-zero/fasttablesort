@@ -33,11 +33,16 @@ function revisedSortTable() {
                 if (Number(bi.innerHTML) > Number(bj.innerHTML)) {
                     rows[i].parentNode.insertBefore(rows[j], rows[i]);
                 }
+                if (Number(bi.innerHTML) == Number(bj.innerHTML) && Number(si.innerHTML) > Number(sj.innerHTML)) {
+                    rows[i].parentNode.insertBefore(rows[j], rows[i]);
+                }
             }
             if (Number(ai.innerHTML) == Number(aj.innerHTML) && isOdd(Number(ai.innerHTML)) == false) {
                 if (Number(bi.innerHTML) < Number(bj.innerHTML)) {
                     rows[i].parentNode.insertBefore(rows[j], rows[i]);
-
+                }
+                if (Number(bi.innerHTML) == Number(bj.innerHTML) && Number(si.innerHTML) > Number(sj.innerHTML)) {
+                    rows[i].parentNode.insertBefore(rows[j], rows[i]);
                 }
             }
         }
